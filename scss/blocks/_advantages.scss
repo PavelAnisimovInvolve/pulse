@@ -30,3 +30,9 @@
         }
     }
 }
+.advantages_icon_animated {
+    animation-name: heartbeat;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}

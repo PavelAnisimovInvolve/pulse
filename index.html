@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header_logo">
@@ -72,7 +73,7 @@
                     </div>
                 </div>
                 <div class="advantages_item">
-                    <img src="icons/advantages/heart.png" alt="heart" class="advantages_icon">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages_icon advantages_icon_animated">
                     <div class="advantages_subtitle">
                         Заботимся о здоровье
                     </div>
@@ -434,7 +435,7 @@
     <section class="feed">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="feed__item">
+            <div class="feed__item wow animate__animated animate__fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.2s">
                 <img src="img/feed_1.png" alt="Ирина Иванченко" class="feed__img">
                 <div class="feed__text">
                     <div class="feed__subtitle">Ирина Иванченко</div>
@@ -448,7 +449,7 @@
                     </div>
                 </div>
             </div>
-            <div class="feed__item">
+            <div class="feed__item wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">
                 <img src="img/feed_2.png" alt="Иван Сёмочкин" class="feed__img">
                 <div class="feed__text">
                     <div class="feed__subtitle">Иван Сёмочкин</div>
@@ -460,7 +461,7 @@
                     </div>
                 </div>
             </div>
-            <div class="feed__item">
+            <div class="feed__item wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                 <img src="img/feed_3.png" alt="Юлия Дашкина" class="feed__img">
                 <div class="feed__text">
                     <div class="feed__subtitle">Юлия Дашкина</div>
@@ -520,12 +521,16 @@
             <div class="modal_subtitle">Спасибо за вашу заявку!</div>
             <div class="modal_descr">Наш менеджер свяжется с вами в ближайшее время</div>
         </div>
-
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -39,4 +39,39 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn();
         });
     });
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
+    //Smooth scroll and page up
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1100) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+
+
+    //Подключение библиотеки WOW для работы animate.css
+    new WOW().init();
 });
