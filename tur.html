@@ -1,0 +1,356 @@
+<?php
+
+/**
+ * Template Name: Hogsetra-2
+ * Template Post Type: page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twenty
+ * @since Twenty Twenty 1.0
+ */
+
+get_header();
+?>
+<style type="text/css" data-type="vc_custom-css">
+  div.m3d-container,
+  #m3d-map {
+    height: 100%;
+  }
+
+  .leaflet-polygon-g3 {
+    fill: #e00 !important;
+    fill-opacity: 0.2 !important;
+  }
+
+  .leaflet-polygon-g2 {
+    fill: #e00 !important;
+    fill-opacity: 0.2 !important;
+  }
+
+  .wp-3dmap {
+    padding-right: 0;
+    width: 100vw;
+    margin-top: 0 !important;
+  }
+
+  div.m3d-popup .col>p {
+    padding: 0;
+    font-family: 'Gilroy Bold' !important;
+    font-weight: bold !important;
+  }
+
+  th {
+    font-family: 'Gilroy Bold' !important;
+    font-size: 16px !important;
+  }
+
+  td {
+    font-family: 'Gilroy Regular' !important;
+    font-size: 16px !important;
+  }
+
+  #htmltable_wrapper>.row:last-child {
+    margin-top: 40px;
+  }
+
+  table.dataTable thead .sorting:before,
+  table.dataTable thead .sorting:after,
+  table.dataTable thead .sorting_asc:before,
+  table.dataTable thead .sorting_asc:after,
+  table.dataTable thead .sorting_desc:before,
+  table.dataTable thead .sorting_desc:after,
+  table.dataTable thead .sorting_asc_disabled:before,
+  table.dataTable thead .sorting_asc_disabled:after,
+  table.dataTable thead .sorting_desc_disabled:before,
+  table.dataTable thead .sorting_desc_disabled:after {
+    bottom: 0.5em;
+  }
+
+  tr:nth-child(2n+1) td {
+    background: #f9f9f9;
+  }
+
+  .pagination>li {
+    margin: 0 !important;
+  }
+
+  .page-item.active .page-link {
+    color: #fff !important;
+  }
+
+  #htmltable_length>label {
+    font-size: 18px;
+  }
+
+  #htmltable_length>label select {
+    font-size: 16px;
+    padding: 0px 30px 0 9px;
+  }
+
+  #htmltable_filter {
+    padding-top: 3px;
+  }
+
+  #htmltable th:nth-child(5),
+  #htmltable td:nth-child(5) {
+    display: none;
+  }
+
+  body:not(.vc_editor) #prospektside_links_block {
+    display: none;
+  }
+</style>
+<noscript>
+  <style>
+    .wpb_animate_when_almost_visible {
+      opacity: 1;
+    }
+  </style>
+</noscript>
+<main id="site-content" role="main">
+
+  <article class="page type-page status-publish hentry">
+    <div class="post-inner">
+      <div class="entry-content">
+        <section class="vc_section alignfull">
+          <div class="vc_row wpb_row vc_row-fluid">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+              <div class="vc_column-inner">
+                <div class="wpb_wrapper" style="padding: 0;">
+                  <div class="wpb_raw_code wpb_content_element wpb_raw_html">                  
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" media="all" /> 
+                      <link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/turufjell/assets/css/bootstrap.min.css" />
+                      <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+                      <link rel="stylesheet" href="//cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css"> 
+                    
+               
+                      <script src="/wp-content/themes/turufjell/assets/js/wow.min.js"></script>
+                      <script src="/wp-content/themes/turufjell/assets/js/bootstrap.bundle.min.js"></script> 
+                      <script src="/wp-content/themes/turufjell/assets/js/classy.js"></script> 
+                      <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+                      <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+                      <script src="//cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+                  </div>
+				  </div>
+                </div>
+
+ 
+                  <div class="wpb_raw_code wpb_content_element wpb_raw_html">	
+						<div class="map-title">
+										<h1>
+											TOMTEVELGER HØGSETRA
+										</h1>
+									</div>
+					  
+                                    <div>
+                                    <div style="max-width: 1921px; margin: 0 auto; position: relative;">
+                             <?php echo do_shortcode( '[Hogsetra2]' ); ?>
+										<div class="map-btn-wrap-hogsetra">
+											<a href="https://fnugg.no/turufjell/" class="map-btn-inner" target="_blank">Fnugg.no</a>
+											<a href="https://skisporet.no/setView/60.4700808/9.5519257/11/norges_grunnkart" class="map-btn-inner" target="_blank">Skisporet.no</a>
+										</div>
+										
+                      </div>
+                    <div class="wpb_wrapper">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="row">
+                              <div class="col-12 ">
+                                <h3 class="small">Om tomtevelgeren</h3>
+                              </div>
+                            </div>
+                           <div class="tomtechoser">
+                                                            <span>Klikk på tomtene for mer informasjon. Gråmarkerte tomter vil komme til salgs på et senere tidspunkt. </span>
+                                                            <p style="height: 46px">&nbsp;</p>
+                                                            <div class="status green">                                                               
+                                                                <span><span class="green-text"><b>Grønne</b> </span>tomter er til salgs</span><br/>
+                                                            </div>
+                                                           
+                                                            <div  class="status yellow">
+
+                                                                <span><span class="yellow-text"><b>Gule</b> </span> tomter er reservert </span>
+                                                            </div>
+                                                            <div  class="status red">
+                                                                 <span><span class="red-text"><b>Røde</b> </span> tomter er solgt </span>
+                                                            </div>
+                                                        </div>
+                          </div>
+                        </div>
+                        <p style="height: 46px">&nbsp;</p>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <h3 class="small mt-0">Tomteliste</h3>
+                          </div>
+                          <div class="col-sm-12 col-md-8 text-md-right">
+                            <a href="/wp-content/uploads/2022/02/Detaljplan-BFR-39-plankart-2021-05-21.pdf" target="_blank" class="readmore d-inline-block mb-3">Reguleringskart BFR39/Høgsetra trinn 1</a>
+                            <a href="/wp-content/uploads/2022/02/2020002-Reguleringsforesegn-Detalj-plan-BFR39-Turufjell-2021-05-21.pdf" target="_blank" class="readmore d-inline-block mb-3">Reguleringsbestemmelser BFR39/Høgsetra trinn 1</a>
+	                        <a href="/wp-content/uploads/2022/02/Detaljplan-BFR-27-plankart-2021-09-20.pdf" target="_blank" class="readmore d-inline-block mb-3">Reguleringskart BFR27/Høgsetra trinn 2</a>
+	                        <a href="/wp-content/uploads/2022/02/2020005-Reguleringsforesegn-Detaljpl-an-BFR27-Turufjell-2022-01-13-1.pdf" target="_blank" class="readmore d-inline-block mb-3">Reguleringsbestemmelser BFR27/Høgsetra trinn 2</a>
+							<a href="/wp-content/uploads/2021/06/2016-049-Omradeplan-Turufjell-2017_06_27-flomsoner.pdf" target="_blank" class="readmore d-inline-block mb-3">Områdereguleringsplan Turufjell</a>
+                          </div>
+                        </div>
+                        <table class="table" id="hogsetra2" style="width: 100%;">
+                          <thead>
+                            <tr>
+                              <th>Tomtnr</th>
+							  <th>Status</th>							  
+                              <th>Pris</th>
+                              <th>Moh</th>
+<!--                               <th>Hytte</th> -->
+                              <th>Tomteareal</th>
+							 
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <?php
+							// vpk 31.05.2021
+							require_once(ABSPATH . 'wp-content/plugins/tomter_2/tomter_2.php');
+
+							if (is_array($items = get_Tomter_2_data_for_table('Hogsetra2'))) {
+								$m = array();
+                               foreach ($items as $spots) {
+                                  foreach ($spots as $spot) {
+                                    if ($spot->type != 'poly') {
+                                       continue;
+                                    }
+									$m[] = $spot;
+								  }
+							   }
+
+							// END vpk 31.05.2021
+                            //$file = dirname(__file__) . '/../assets/json/tomter2.json';
+                            //if (file_exists($file)) {
+                              //$plots = json_decode(file_get_contents($file));
+                              //$m = (array)$plots->spots;
+                              $keys = array_keys($m);
+                              asort($keys);
+                              $status = [
+                                'Ledig' => 'Ledig',
+                                'Solgt' => 'Solgt',
+                                'Reservert' => 'Reservert',
+                                'book' => 'Reservert'
+                              ];
+                              $stats_classes = [
+                                'free' => 'ledig',
+                                'sold' => 'solgt',
+                                'reservert' => 'reservert',
+                                'book' => 'text-warning'
+                              ];
+
+                              foreach ($keys as $key) {
+                                $value = $m[$key];
+                           
+							   $element_params = $value->tooltip_content->squares_settings->containers[0]->settings->elements;
+							   $plot_price = $element_params[2]->options->text->text;
+							   $plot_status = $element_params[1]->options->text->text;
+							   $plot_status_class_name = strtolower($plot_status);
+							   $plot_size = $element_params[3]->options->text->text;
+							   $plot_moh = $element_params[4]->options->text->text;
+
+							   // vpk 03.06.2021
+							   if('Ikke for salg'==$plot_status){
+									continue;
+							   }
+							   // END vpk 03.06.2021
+								  
+								 
+							  ?>
+                                <tr>
+								  <td><?= $value->title ?></td>	
+								  <td class="<?= $plot_status_class_name ?>"><?= $plot_status ?></td>
+                                  <td><?= $plot_price == null ? '' : $plot_price ?></td>
+								  <td><?= $plot_moh ?></td>	                                 
+<!--                              <td><?= !empty($value->name) ? $value->name : '' ?></td> -->
+                                  <td><?= $plot_size ?></td>								  							  						 
+                                </tr> 
+                            <?php
+                              }
+                            }
+                            ?>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wpb_raw_code wpb_raw_js">
+                    <div class="wpb_wrapper">
+                      <script>
+                        new WOW().init();
+                        jQuery(document).ready(function($) {
+                          $.fn.dataTableExt.oSort["number-asc"] = function(a, b) {
+                            return a.replace(/\D/g, '') - b.replace(/\D/g, '');
+                          };
+                          $.fn.dataTableExt.oSort["number-desc"] = function(a, b) {
+                            return $.fn.dataTableExt.oSort["number-asc"](b, a);
+                          };
+							
+						$.fn.dataTable.Responsive.breakpoints = [
+							{ name: 'mobile',   width: 600 }
+						];
+
+                          var dtParams = {
+                            "responsive": true,
+                            "lengthMenu": [
+                              [10, 25, 50, -1],
+                              [10, 25, 50, 'Alle']
+                            ],
+                            "stateSave": false,
+                            "language": {
+                              "decimal": ",",
+                              "emptyTable": "Ingen elementer ble funnet",
+                              "info": "Viser _START_ til _END_ av _TOTAL_ totalt",
+                              "infoEmpty": "Ingen elementer",
+                              "infoFiltered": "(filtrert fra _MAX_ totalt)",
+                              "infoPostFix": "",
+                              "thousands": ".",
+                              "lengthMenu": "Vis _MENU_ rader",
+                              "loadingRecords": "Laster...",
+                              "processing": "Oppdaterer...",
+                              "search": "Søk:",
+                              "zeroRecords": "Ingen treff ble funnet",
+                              "paginate": {
+                                "first": "Første",
+                                "last": "Siste",
+                                "next": 'Neste',
+                                "previous": 'Forrige'
+                              },
+                              "aria": {
+                                "sortAscending": ": sorter stigende",
+                                "sortDescending": ": sorter synkende"
+                              }
+                            },
+                            "aoColumns": [{
+                                "bSortable": true,
+                                "sType": "number"
+                              },
+                              {},
+                              {},
+                              {
+                                "bSortable": true,
+                                "sType": "number"
+                              },
+                              {}
+                            ]
+                          };
+                          $('#hogsetra2').DataTable(dtParams);
+                          $('.map-wrapper').on('touchmove', function(e) {
+                            e.preventDefault();
+                          });
+                          console.log('test');
+                        });
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div><!-- .entry-content -->
+    </div><!-- .post-inner -->
+    <div class="section-inner">
+    </div><!-- .section-inner -->
+  </article><!-- .post -->
+</main><!-- #site-content -->
+<?php get_footer(); ?>
